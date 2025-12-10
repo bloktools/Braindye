@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Braindye. - Dashboard</title>
+
+    <link rel="stylesheet" href="/global/style.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <div class="filters">
+                <h3>Filters</h3>
+                <div class="filter-group">
+                    <label for="subject">Subject</label>
+                    <select id="subject">
+                        <option value="">All Subjects</option>
+                        <optgroup label="Math">
+                            <option value="math">Math: All</option>
+                            <option value="algebra">Math: Algebra</option>
+                            <option value="geometry">Math: Geometry</option>
+                            <option value="precalc">Math: Precalculus</option>
+                            <option value="calc">Math: Calculus</option>
+                        </optgroup>
+                        <optgroup label="Science">
+                            <option value="science">Science: All</option>
+                            <option value="physics">Science: Physics</option>
+                            <option value="chemistry">Science: Chemistry</option>
+                            <option value="biology">Science: Biology</option>
+                            <option value="environmental">Science: Environmental</option>
+                        </optgroup>
+                        <optgroup label="World Languages">
+                            <option value="english">English: All</option>
+                            <option value="eng-lang">English: Language</option>
+                            <option value="eng-lit">English: Literature</option>
+                            <option value="spanish">Spanish: All</option>
+                            <option value="esp-lang">Spanish: Language</option>
+                            <option value="esp-lit">Spanish: Literature</option>
+                            <option value="french">French: All</option>
+                            <option value="fra-lang">French: Language</option>
+                            <option value="fra-lit">French: Literature</option>
+                        </optgroup>
+                        <optgroup label="Social Studies">
+                            <option value="social-studies">Social Studies</option>
+                            <option value="world-hist">Social Studies: World History</option>
+                            <option value="us-hist">Social Studies: US History</option>
+                            <option value="fl-hist">Social Studies: Florida History</option>
+                            <option value="us-gov">Social Studies: US Government</option>
+                            <option value="psychology">Social Studies: Psychology</option>
+                        </optgroup>
+                        
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="grade">Grade Level</label>
+                    <select id="grade">
+                        <option value="">All Grades</option>
+                        <option value="9">Grade Pre-K 3</option>
+                        <option value="9">Grade Pre-K 4</option>
+                        <option value="9">Grade K</option>
+                        <option value="9">Grade 1</option>
+                        <option value="9">Grade 2</option>
+                        <option value="9">Grade 3</option>
+                        <option value="9">Grade 4</option>
+                        <option value="9">Grade 5</option>
+                        <option value="9">Grade 6</option>
+                        <option value="9">Grade 7</option>
+                        <option value="9">Grade 8</option>
+                        <option value="9">Grade 9</option>
+                        <option value="9">Grade 10</option>
+                        <option value="9">Grade 11</option>
+                        <option value="9">Grade 12</option>
+                    </select>
+                </div>
+            </div>
+        </aside>
+
+        <main class="dashboard-content">
+            <h1>Dashboard</h1>
+
+            <section class="section assignments">
+                <h2>Assignments</h2>
+                <div class="content-grid"></div>
+            </section>
+
+            <section class="section games">
+                <h2>Available Games</h2>
+                <div class="content-grid"></div>
+            </section>
+
+            <section class="section videos">
+                <h2>Videos</h2>
+                <div class="content-grid"></div>
+            </section>
+
+            <section class="section courses">
+                <h2>Courses</h2>
+                <div class="content-grid"></div>
+            </section>
+        </main>
+    </div>
+
+    <script src="/global/script.js"></script>
+</body>
+</html>

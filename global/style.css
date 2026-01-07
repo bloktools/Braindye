@@ -14,7 +14,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: "Asta Sans", Arial, sans-serif;
-    background-color: var(--light-neutral);
+    background-color: var(--dark-neutral);
 }
 
 a {
@@ -178,7 +178,7 @@ button:focus {
 }
 
 .dark-bg section::after {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.9);
 }
 
 .pricing-cards {
@@ -192,4 +192,42 @@ button:focus {
     color: var(--dark-neutral);
     padding: 20px;
     box-sizing: border-box;
+}
+
+#mobile-menu-button {
+    display: none;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+#mobile-menu {
+    display: none;
+    position: fixed;
+    top: 60px;
+    right: 0;
+    background: var(--dark-neutral);
+    color: var(--light-neutral);
+    width: 100vw;
+    box-sizing: border-box;
+    padding: 20px;
+    z-index: 9;
+}
+#mobile-menu a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 700px) {
+    nav ul a {
+        display: none;
+    }
+
+    .ignore-nav {
+        display: block;
+    }
+
+    #mobile-menu-button {
+        display: block;
+    }
 }

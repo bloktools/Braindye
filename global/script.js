@@ -24,8 +24,18 @@ document.addEventListener("DOMContentLoaded", function() {
         </ul>
         <ul>
             <a href="/account"><li>Account</li></a>
+            <li id="mobile-menu-button">&#9776;</li>
         </ul>
     </nav>
+
+    <div id="mobile-menu">
+        <a href="/"><li>Home</li></a>
+        <a href="/about"><li>About</li></a>
+        <a href="/help"><li>Help</li></a>
+        <a href="/dashboard" class="dashboard"><li>Dashboard</li></a>
+        <a href="/pricing"><li>Pricing</li></a>
+        <a href="/account"><li>Account</li></a>
+    </div>
     `);
 
     const head = document.head
@@ -47,5 +57,15 @@ document.addEventListener("DOMContentLoaded", function() {
             };
         });
     }
+
+    const mobileMenuButton = document.getElementById("mobile-menu-button");
+    mobileMenuButton.addEventListener("click", function() {
+        const mobileMenu = document.getElementById("mobile-menu");
+        if (mobileMenu.style.display === "block") {
+            mobileMenu.style.display = "none";
+        } else {
+            mobileMenu.style.display = "block";
+        }
+    });
 
 });

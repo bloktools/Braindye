@@ -839,17 +839,31 @@ button:focus {
 
 
 
+.mobile-menu-button {
+    display: none;
+}
 
 @media screen and (max-width: 700px) {
-    nav ul a {
-        display: none;
+    nav ul .hide-mobile, 
+    nav ul li.hide-mobile .nav-link {
+        display: none !important;
     }
 
-    .ignore-nav {
+    nav {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .mobile-menu-button {
         display: block;
+        font-size: 2rem;
     }
 
-    #mobile-menu-button {
+    #mobile-menu {
+        display: block; /* Overrides the display: none from earlier */
+    }
+
+    #mobile-menu .nav-link-mobile {
         display: block;
     }
 }

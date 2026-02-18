@@ -1,6 +1,8 @@
 # Braindye
 ### by Riley Clos and Veer Patel.
 
+[Planning, methodology, and implementation](https://docs.google.com/document/d/1rAcazflyUBMx7SFzF209-8vzp4krxQStavSgnfZaM3s/edit?usp=sharing)
+
 Welcome! You have reached the GitHub page containing the source code for our 2026 Website Design project.
 
 ### Access Instructions
